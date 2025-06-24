@@ -1,0 +1,13 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.btn {
+    &__promo {
+        width: 135px;
+        height: 45px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background: $yellow;
+        font-weight: 700;
+        font-size: 14px;
+        color: $witht;
+    }
+}

@@ -1,0 +1,29 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.sidepanel {
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    &__devider {
+        width: 2px;
+        height: 70px;
+        background-color: $witht;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 16px;
+        color: $witht;
+        height: 150px;
+        width: 25px;
+        span {
+            transform: rotate(-90deg) translate(-35%, -350%);
+            display: block;
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.title {
+    &__subtitle {
+        font-weight: 700;
+        font-size: 16px;
+        color: $witht;
+    }
+    &__promo {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 125%;
+        color: $witht;
+        width: 520px;
+    }
+}
