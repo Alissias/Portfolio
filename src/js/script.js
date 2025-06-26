@@ -7,19 +7,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'animate.css';
 
-// const burger = document.querySelector(".burger"),
-// 	close = document.querySelector(".header__menu-close"),
-// 	menu = document.querySelector(".header__menu");
+const burger = document.querySelector(".burger"),
+	close = document.querySelector(".menu__close"),
+	menu = document.querySelector(".menu");
 
-// burger.addEventListener("click", () => {
-// 	menu.classList.add("header__menu_active");
-// 	document.body.style.overflow = "hidden";
-// });
+burger.addEventListener("click", () => {
+	menu.classList.add("menu_active");
+	document.body.style.overflow = "hidden";
+});
 
-// close.addEventListener("click", () => {
-// 	menu.classList.remove("header__menu_active");
-// 	document.body.style.overflow = "";
-// });
+close.addEventListener("click", () => {
+	menu.classList.remove("menu_active");
+	document.body.style.overflow = "";
+});
 
 // try {
 //   new Swiper('.works__slider', {
@@ -48,6 +48,8 @@ import 'animate.css';
 // });
 // } catch(e) {}
 
+
+
 // try {
 // 	const tabs = document.querySelectorAll(".catalog__tab");
 // 	const contents = document.querySelectorAll(".catalog__content-item");
@@ -67,6 +69,8 @@ import 'animate.css';
 // 	// Показываем первый контент при загрузке
 // 	contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 // } catch (e) {}
+
+
 
 // try {
 //   const validator = new JustValidate('form');

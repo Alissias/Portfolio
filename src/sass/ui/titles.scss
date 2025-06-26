@@ -1,17 +1,33 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
 
 .title {
     &__subtitle {
-        font-weight: 700;
+        @include title;
         font-size: 16px;
-        color: $witht;
+        &_white {
+            color: $white;
+        }
+        &_about {
+            padding-left: 12px;
+            padding-top: 1px;
+        }
     }
     &__promo {
+        @include title;
         margin-top: 10px;
-        font-weight: 700;
         font-size: 48px;
         line-height: 125%;
-        color: $witht;
+        color: $white;
         width: 520px;
+    }
+    &__about {
+        @include title;
+        font-size: 36px;
+        line-height: 167%;
+    }
+    &__skils {
+        @include title;
+        font-size: 14px;
     }
 }

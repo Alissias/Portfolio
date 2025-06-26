@@ -11,10 +11,10 @@ fieldset {
 	margin: 0;
 }
 
-ol[role="list"],
-ul[role="list"] {
+ol,
+ul {
 	list-style: none;
-	padding-inline: 0;
+	padding-inline-start: 0;
 }
 
 h1,
