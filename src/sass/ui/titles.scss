@@ -6,11 +6,17 @@
         @include title;
         font-size: 16px;
         &_white {
+            @include title;
             color: $white;
         }
         &_about {
+            @include title;
             padding-left: 12px;
             padding-top: 1px;
+        }
+        &_resume{
+            @include title;
+            text-align: center;
         }
     }
     &__promo {
@@ -26,8 +32,19 @@
         font-size: 36px;
         line-height: 167%;
     }
+    &__resume {
+        @include title;
+        font-size: 36px;
+        line-height: 167%;
+        text-align: center;
+    }
     &__skils {
         @include title;
         font-size: 14px;
+    }
+    &__column {
+        @include title;
+        font-size: 20px;
+        line-height: 30px;
     }
 }

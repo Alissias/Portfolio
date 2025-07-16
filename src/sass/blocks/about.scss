@@ -25,7 +25,6 @@
         padding-top: 6px;
         .divider {
             @include divider;
-            margin-top: 0;
         }
     }
     &__text {
