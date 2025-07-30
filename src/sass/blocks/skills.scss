@@ -1,0 +1,86 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.skills {
+    margin-top: 120px;
+    &__circle {
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(-25%);
+        }
+    }
+    .divider {
+        @include divider;
+        margin: 25px auto 0px auto;
+    }
+    &__items {
+        display: grid;
+        margin-top: 60px;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+    }
+    &__item {
+        border: 1px solid black;
+        padding: 30px 30px 25px 30px;
+    }
+    &__img {
+        display: flex;
+        align-items: center;
+        min-height: 65px;
+    }
+    &__name {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    &__descr {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        color: $dark;
+    }
+    &__rating {
+        margin-top: 128px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, minmax(70px, auto));
+        column-gap: 45px;
+        row-gap: 35px;
+        &_item {
+            display: grid;
+            grid-template-columns: 200px 35px;
+            grid-template-rows: minmax(21px, auto);
+            justify-content: space-between;
+            align-items: space-between;
+        }
+        &__title {
+            position: relative;
+            padding: 2px 0 0 13px;
+            @include before_circle;
+            &:before {
+                top: -20%;
+            }
+        }
+        &_counter {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &_line {
+            width: 350px;
+            height: 14px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            grid-column: 1 / 3;
+            span {
+                display: block;
+                height: 100%;
+                background-color: $yellow;
+                border-radius: 4px;
+            }
+        }
+    }
+}

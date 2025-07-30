@@ -5,6 +5,7 @@
     &__subtitle {
         @include title;
         font-size: 16px;
+        text-align: center;
         &_white {
             @include title;
             color: $white;
@@ -38,9 +39,15 @@
         line-height: 167%;
         text-align: center;
     }
-    &__skils {
+    &__skill {
         @include title;
         font-size: 14px;
+    }
+    &__skills {
+        @include title;
+        font-size: 36px;
+        line-height: 167%;
+        text-align: center;
     }
     &__column {
         @include title;
