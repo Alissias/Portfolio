@@ -168,7 +168,21 @@ close.addEventListener("click", () => {
 // 		);
 // } catch (e) {}
 
+
+
+try {
+	const counters = document.querySelectorAll('.skills__rating_counter'),
+		  lines = document.querySelectorAll ('.skills__rating_line span');
+
+	counters.forEach( (item, i) => {
+		lines[i].style.width = item.innerHTML;
+	})
+} catch (e) {}
+
+
+
 import "purecss/build/grids-min.css";
 import "purecss/build/grids-responsive-min.css";
 
 import "/src/sass/style.scss";
+import { compileString } from 'sass';
