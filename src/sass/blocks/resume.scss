@@ -6,7 +6,7 @@
     position: relative;
     .divider {
         @include divider;
-        margin: 25px auto 0px auto;
+        margin: 15px auto 0px auto;
     }
     &__circle {
         position: relative;
