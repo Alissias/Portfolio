@@ -2,7 +2,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .skills {
-    margin-top: 120px;
+    padding-top: 120px;
     &__circle {
         position: relative;
         @include before_circle;

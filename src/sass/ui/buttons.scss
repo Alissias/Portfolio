@@ -9,6 +9,18 @@
         font-weight: 700;
         font-size: 14px;
         color: $white;
+        border: none; 
+        cursor: pointer;
+    }
+    &__contacts {
+        width: 219px;
+        height: 45px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background: $yellow;
+        font-weight: 700;
+        font-size: 14px;
+        color: $dark;
+        border: none; 
         cursor: pointer;
     }
 }

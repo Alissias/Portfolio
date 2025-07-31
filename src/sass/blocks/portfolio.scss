@@ -2,7 +2,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .portfolio {
-    margin-top: 126px;
+    padding-top: 126px;
     &__circle {
         position: relative;
         @include before_circle;

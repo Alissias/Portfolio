@@ -2,7 +2,7 @@
 @use "/src/sass/base/mixins.scss" as *;
 
 .resume {
-    margin-top: 120px;
+    padding-top: 120px;
     position: relative;
     .divider {
         @include divider;

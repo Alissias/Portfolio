@@ -2,7 +2,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .prise {
-    margin-top: 66px;
+    padding-top: 66px;
     &__circle {
         position: relative;
         @include before_circle;
