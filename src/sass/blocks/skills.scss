@@ -55,7 +55,6 @@
             grid-template-columns: 200px 35px;
             grid-template-rows: minmax(21px, auto);
             justify-content: space-between;
-            align-items: space-between;
         }
         &__title {
             position: relative;
@@ -81,6 +80,36 @@
                 background-color: $yellow;
                 border-radius: 4px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+	.skills {
+        padding: 120px 50px 0 50px;
+        &__items {
+            grid-template-columns: repeat(3, 270px);
+            gap: 40px;
+        }
+        &__rating {
+            grid-template-columns: repeat(2, 420px);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .skills {
+        padding: 120px 0 0 0;
+        &__items {
+            padding: 0 50px 0 50px;
+            grid-template-columns: repeat(2, 270px);
+            justify-content: space-between;
+        }
+        &__rating {
+            margin-top: 70px;
+            grid-template-columns: repeat(2, 350px);
+            grid-template-rows: repeat(3, minmax(70px, auto));
+            column-gap: 15px;
         }
     }
 }

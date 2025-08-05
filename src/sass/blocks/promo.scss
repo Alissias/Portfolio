@@ -18,3 +18,12 @@
         z-index: 2;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .promo {
+        background: url(/src/img/main_photo.png) no-repeat 57% / cover;
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+}

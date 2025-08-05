@@ -19,3 +19,9 @@
         width: 36px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .burger {
+        right: 20px;
+    }
+}

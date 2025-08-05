@@ -85,3 +85,12 @@
         opacity: .50;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .menu {
+        &__block {
+            max-width: 250px;
+            padding-left: 20px;
+        }
+    }
+}

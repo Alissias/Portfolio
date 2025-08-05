@@ -67,3 +67,37 @@
         margin-top: 12px;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .title {
+        &__about {
+            font-size: 30px;
+        }
+        &__resume {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        &__promo {
+            font-size: 26px;
+            width: 300px;
+            line-height: 39px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        &__about {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+        &__resume {
+            font-size: 24px;
+        }
+    }
+}
