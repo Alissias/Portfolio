@@ -113,3 +113,33 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .skills {
+        &__items {
+            padding: 0;
+            justify-content: center;
+            gap: 10px;
+        }
+         &__rating {
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills {
+        &__items {
+            grid-template-columns: 270px;
+        }
+        &__rating {
+            grid-template-columns: repeat(auto-fit, 270px);
+            &_line {
+                width: 100%;
+            }
+        }
+    }
+}

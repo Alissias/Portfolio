@@ -123,7 +123,7 @@
     .resume {
         padding-top: 50px;
         &__wrapper {
-            grid-template-columns: minmax(540px, auto);
+            grid-template-columns: minmax(490px, auto);
         }
         &__column {
             &:nth-child(2) {
@@ -136,6 +136,7 @@
 @media screen and (max-width: 576px) {
     .resume {
         &__wrapper {
+            padding: 40px 0 0 0;
             grid-template-columns: minmax(280px, auto);
         }
     }
