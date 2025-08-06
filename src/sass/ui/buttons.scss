@@ -29,3 +29,12 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .btn {
+        &__contacts {
+            margin: 0 auto;
+            grid-row: 2 / 3;
+        }
+    }
+}

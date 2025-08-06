@@ -57,3 +57,31 @@
         color: $dark;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .prise {
+        &__wrapper {
+            padding: 0 30px;
+            grid-template-columns: repeat(2, 320px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .prise {
+        &__wrapper {
+            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, 475px);
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .prise {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 290px;
+            justify-content: space-around;
+        }
+    }
+}
