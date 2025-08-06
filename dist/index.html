@@ -46,8 +46,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.min.css">
-  <script type="module" crossorigin src="/assets/main-OYKg_NA3.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-CrE1FOXK.css">
+  <script type="module" crossorigin src="/assets/main-DEafFutr.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BYnQKYCV.css">
 </head>
 
 
@@ -96,7 +96,7 @@
             <h1 class="title__promo">Я web-разработчик из города Киров</h1>
             <div class="promo__btns">
                 <button class="btn__promo">Портфолио</button>
-                <button class="btn__promo">Про меня</button>
+                <button class="btn__promo btn__promo-none">Про меня</button>
             </div>
         </div>
     </section>
@@ -152,7 +152,7 @@
             <div class="title__resume">Чем я буду полезен</div>
             <div class="divider"></div>
             <div class="resume__wrapper">
-                <div class="rusume__column">
+                <div class="resume__column">
                     <h2 class="title__column column__circle">Образование</h2>
                     <ul>
                         <li>
@@ -185,7 +185,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="rusume__column">
+                <div class="resume__column">
                     <h2 class="title__column column__circle">Опыт работы</h2>
                     <ul>
                         <li>
@@ -310,6 +310,7 @@
             </div>
         </div>
     </section>
+
     <section class="portfolio">
         <div class="container">
             <div class="title__subtitle portfolio__circle">Портфолио</div>
@@ -337,7 +338,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="prise">
         <div class="container">
@@ -381,7 +381,9 @@
     <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
-                <div class="contacts__img"><img src="/assets/abount_photo-BLQ3g6un.jpg" alt="photo"></div>
+                <div class="contacts__img">
+                    <img src="/assets/abount_photo-BLQ3g6un.jpg" alt="photo">
+                </div>
                 <div class="contacts__descr">
                     <div class="title__subtitle title__subtitle_contacts contacts__circle">Контакты</div>
                     <div class="title__contacts">Свяжитесь со мной</div>
@@ -401,25 +403,29 @@
                     <div class="contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
-
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="btn__contacts">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </section>
+
 </body>
 </html>
